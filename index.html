@@ -2,8 +2,8 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Full Page Image</title>
+    <meta name="viewport" content="width=device-width, height=device-height, initial-scale=1.0">
+    <title>Full Screen Image</title>
     <style>
         * {
             margin: 0;
@@ -13,16 +13,21 @@
         html, body {
             width: 100%;
             height: 100%;
+        }
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
             overflow: hidden;
         }
         img {
-            width: 100%;
-            height: 100%;
-            object-fit: cover; /* Ensures the image covers the entire screen */
+            width: 100vw;
+            height: 100vh;
+            object-fit: cover; /* Makes the image fill the entire screen */
         }
     </style>
 </head>
 <body>
-    <img src="yishai.jpeg" alt="Full Page Image">
+    <img src="image.jpg" alt="Full Page Image">
 </body>
 </html>
